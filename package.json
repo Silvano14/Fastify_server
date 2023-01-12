@@ -2,6 +2,7 @@
   "name": "fastify_server",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/Silvano14/Fastify_server#readme",
   "dependencies": {
+    "@fastify/cors": "^8.2.0",
     "fastify": "^4.11.0"
   }
 }
