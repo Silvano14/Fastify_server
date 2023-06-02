@@ -12,17 +12,20 @@ app.use(cors());
 
 app.post("/login", jsonParser, (req, res) => {
   const body = req.body;
-
+  console.log(req);
   if (!body.username && !body.password) {
     res.status(422).json({ data: "Username and password are not valid" });
+    return;
   }
 
   if (!body.username) {
     res.status(422).json({ data: "Username is not valid" });
+    return;
   }
 
   if (!body.password) {
     res.status(422).json({ data: "Password is not valid" });
+    return;
   }
 
   res.status(200).json({ data: "Ok :)" });
